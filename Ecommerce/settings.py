@@ -46,8 +46,7 @@ INSTALLED_APPS = [
     'api.category',
     'api.product',
     'api.user',
-    'api.order',
-    'api.payment'
+    'api.order'
 ]
 
 MIDDLEWARE = [
@@ -149,3 +148,10 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+
+PAYTM_MERCHANT_ID = 'Cmbkmu40894416886047'
+PAYTM_SECRET_KEY = 'NigiqtRROH9ux7El'
+PAYTM_WEBSITE = 'WEBSTAGING'
+PAYTM_CHANNEL_ID = 'WEB'
+PAYTM_INDUSTRY_TYPE_ID = 'Retail'
+CALLBACK_URL = 'http://127.0.0.1:8000/api/payment/callback/'
